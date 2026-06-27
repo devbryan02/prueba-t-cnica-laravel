@@ -1,0 +1,20 @@
+<?php
+
+namespace App\Features\Product\Requests;
+
+use Illuminate\Foundation\Http\FormRequest;
+
+class UpdateProductRequest extends FormRequest
+{
+    public function rules(): array
+    {
+        return [
+            'name' => 'required|string|max:255',
+            'description' => 'nullable|string',
+            'price' => 'required|numeric|min:0',
+            'stock' => 'nullable|integer|min:0',
+            'category_id' => 'required|exists:categories,id',
+        ];
+    }
+
+}
