@@ -150,3 +150,7 @@ php artisan test
 
 - `GET http://127.0.0.1:8000/api/categories`
 - `GET http://127.0.0.1:8000/api/products`
+
+# Documentacion disponible: 
+ http://localhost:8000/docs/api
+ (por temas de tiempo sé utilizó documentacion automatica)
